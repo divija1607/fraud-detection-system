@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fraud Detection System</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Blacklist / Whitelist Fraud Detection</h1>
+
+    <form action="/check" method="POST">
+
+        <input type="text"
+        name="name"
+        placeholder="Enter Name"
+        required>
+
+        <input type="email"
+        name="email"
+        placeholder="Enter Email"
+        required>
+
+        <input type="number"
+        name="amount"
+        placeholder="Transaction Amount"
+        required>
+
+        <button type="submit">
+            Check Fraud
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
